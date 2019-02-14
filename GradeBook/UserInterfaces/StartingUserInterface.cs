@@ -39,8 +39,7 @@ namespace GradeBook.UserInterfaces
                 return;
             }
             var name = parts[1];
-            //var type = parts[2].ToLower();
-            var type = parts[2];
+            var type = parts[2].ToLower();
             var weighted = bool.Parse(parts[3]);
             BaseGradeBook gradeBook;
             if (type == "standard")
@@ -78,7 +77,7 @@ namespace GradeBook.UserInterfaces
         {
             Console.WriteLine("GradeBook accepts the following commands:");
             Console.WriteLine();
-            Console.WriteLine("Create 'Name' 'Type' 'Wieghted' - Creates a new gradebook where 'Name' is the name of the gradebook, 'Type' is what type of grading it should use, and 'Weighted' is whether or not grades should be weighted (True or False).");
+            Console.WriteLine("Create 'Name' 'Type' 'Weighted' - Creates a new gradebook where 'Name' is the name of the gradebook, 'Type' is what type of grading it should use, and 'Weighted' is whether or not grades should be weighted (True or False).");
             Console.WriteLine();
             Console.WriteLine("Load 'Name' - Loads the gradebook with the provided 'Name'.");
             Console.WriteLine();
